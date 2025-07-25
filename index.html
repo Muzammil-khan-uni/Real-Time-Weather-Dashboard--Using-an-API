@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+<meta name="description" content="WeatherSphere provides real-time weather updates with forecasts and safety tips.">
+
+    <title>WeatherSphere | Real-Time Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="glass-container">
+            <header class="app-header">
+                <h1 class="app-title"><i class="fas fa-cloud-sun"></i> WeatherSphere</h1>
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="city-search" placeholder="Search city..." autocomplete="off">
+                        <button id="search-btn" class="search-button" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <button id="location-btn" class="location-button" title="Use my location">
+                            <i class="fas fa-location-crosshairs"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="loading" id="loading">
+                <div class="loading-content">
+                    <div class="weather-loader">
+                        <div class="cloud"></div>
+                        <div class="rain">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <p>Fetching weather data...</p>
+                </div>
+            </div>
+
+            <main class="weather-content">
+                <div class="current-weather" id="current-weather">
+                </div>
+
+                <div class="forecast-container" id="forecast">
+                </div>
+
+                <div class="additional-info">
+                    <div class="recent-cities">
+                        <h3><i class="fas fa-history"></i> Recent Locations</h3>
+                        <div class="recent-list" id="recent-cities">
+                        </div>
+                    </div>
+                    <div class="weather-tips" id="weather-tips">
+                    </div>
+                </div>
+            </main>
+
+            <footer class="app-footer">
+                <p>Data provided by OpenWeatherMap</p>
+                <p class="refresh-note">Weather updates automatically every 15 minutes</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
