@@ -1,5 +1,6 @@
 #  Real-Time Weather Dashboard  Using an API
 
+[![IMAGE ALT TEXT HERE]()](https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7354682119987634178?compact=1)
 
 
 WeatherSphere is a fully responsive, real-time weather dashboard that allows users to search for weather updates across the globe, view 3-day forecasts, and receive smart weather tips. Built using vanilla JavaScript and OpenWeatherMap API, the app combines modern UI/UX principles with practical asynchronous JavaScript operations and API integration.
